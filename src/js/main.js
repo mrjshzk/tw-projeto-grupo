@@ -78,7 +78,7 @@ function addGenreOption(genre) {
 }
 
 function UpdateCardContainerInnerHTML(data) {
-  cardContainer.innerHTML = filteredData
+  cardContainer.innerHTML = data
     .map((movie) =>
       getCardFromMovieData(
         grinch,

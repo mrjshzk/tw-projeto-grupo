@@ -2,7 +2,7 @@ import { session, setUser, User, defaultUsers } from "./session.js";
 import { addToast } from "./toasts.js";
 
 if (session.loggedIn) {
-  window.location.href = "/account.html";
+  window.location.href = "account.html";
 } else {
   let fieldInvalid = (f) => f == "" || f == undefined;
   document.getElementById("loginForm").addEventListener("submit", (e) => {
@@ -24,7 +24,7 @@ if (session.loggedIn) {
       if (user.email == username || user.username == username) {
         if (user.password == password) {
           setUser(new User(user.username, user.email, user.password));
-          window.location.href = "/account.html";
+          window.location.href = "account.html";
           return;
         }
       }

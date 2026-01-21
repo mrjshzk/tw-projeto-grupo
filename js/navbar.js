@@ -1,15 +1,15 @@
 let redirectToLogin = () => {
-  window.location.href = "/login.html";
+  window.location.href = "login.html";
 };
 
 let redirectToSignup = () => {
-  window.location.href = "/signup.html";
+  window.location.href = "signup.html";
 };
 let navbar = `
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
   <div class="container">
 
-    <a class="navbar-brand fw-bold text-danger" href="/">CineStore</a>
+    <a class="navbar-brand fw-bold text-danger" href="index.html">CineStore</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cineNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>

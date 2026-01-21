@@ -13,10 +13,10 @@ if (session.loggedIn) {
   emailField.innerText = email;
   passwordField.innerText = passHidden;
 } else {
-  window.location.href = "/signup.html";
+  window.location.href = "signup.html";
 }
 
 document.getElementById("logout").addEventListener("click", () => {
   clearUser();
-  window.location.href = "/signup.html";
+  window.location.href = "signup.html";
 });

@@ -188,6 +188,14 @@ submitCommentBtn.addEventListener("click", () => {
 });
 
 function addComment(comment, rating) {
+  if (commentContainer.value == "") {
+    addToast("Please write a comment.");
+    return;
+  }
+  if (ratingContainer.value == "") {
+    addToast("Please set a rating.");
+    return;
+  }
   commentContainer.value = "";
   ratingContainer.value = "";
 

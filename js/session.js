@@ -27,14 +27,13 @@ if (localStorage.getItem("loggedIn")) {
   setUser(user);
 }
 
-class User {
-  constructor(name, email, password, gender) {
+export class User {
+  constructor(name, email, password) {
     this.username = name;
     this.email = email;
     this.password = password;
-    this.gender = gender;
   }
 }
 // Para tambem dar para para fazer login
-let default_users = [new User("admin", "admin@admin", "admin", "none")];
-localStorage.setItem("users", default_users);
+export const defaultUsers = [new User("admin", "admin@admin", "admin")];
+localStorage.setItem("users", JSON.stringify(defaultUsers));

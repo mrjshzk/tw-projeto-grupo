@@ -1,0 +1,11 @@
+.carousel-card-image {
+    background-image: url('../img/grinch.png');
+    min-height: 50vh; 
+    aspect-ratio: 2/3;
+    background-size: cover;
+}
+
+.carousel-card div {
+    background-color: "black";
+    color: "black";
+}

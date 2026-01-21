@@ -1,86 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/carousel.css" />
+    <link rel="icon" href="https://fav.farm/🍿" />
+    <title>CineStore</title>
+  </head>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-		crossorigin="anonymous">
+  <body>
+    <script src="js/navbar.js"></script>
 
-	<title>🍿 CineStore</title>
+    <!-- HERO: full-viewport carousel -->
+    <section id="hero">
+      <div
+        id="movieCarousel"
+        class="carousel slide h-100"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner h-100"></div>
 
-	<style>
-		/* Custom styles for the movie carousel */
-		.movie-carousel-item {
-			position: relative;
-			height: 500px;
-			/* Adjust height as needed */
-			overflow: hidden;
-		}
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#movieCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#movieCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-		.movie-carousel-item img {
-			object-fit: cover;
-			height: 100%;
-			width: 100%;
-		}
+    <div id="carousel_container"></div>
+    <script src="js/carousel.js"></script>
+    <script src="js/home.js" type="module"></script>
 
-		/* The shadow overlay to make text readable */
-		.overlay-shadow {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 60%;
-			/* Covers bottom 60% of image */
-			background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-			pointer-events: none;
-			/* Allows clicking through the shadow if needed */
-		}
-
-		/* Customizing the caption position */
-		.carousel-caption-left {
-			position: absolute;
-			right: 15%;
-			bottom: 2rem;
-			left: 2rem;
-			/* Pushes text to the left */
-			padding-top: 1.25rem;
-			padding-bottom: 1.25rem;
-			color: #fff;
-			text-align: left;
-			/* Aligns text specifically to the left */
-			z-index: 10;
-		}
-	</style>
-</head>
-
-<body>
-
-	<script src="js/navbar.js"></script>
-
-	<div class="container text-center pt-5">
-		<h1>Welcome to our Store!</h1>
-	</div>
-
-	<div id="carousel_container" class="container mt-5">
-	</div>
-
-	<script src="js/home.js" type="module"></script>
-	<script src="js/carousel.js"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-		crossorigin="anonymous"></script>
-
-	<script>
-		const myCarouselElement = document.querySelector('#myCarousel')
-
-		const carousel = new bootstrap.Carousel(myCarouselElement, {
-			interval: 2000,
-			touch: true
-		})
-	</script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

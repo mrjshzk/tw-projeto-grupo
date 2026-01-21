@@ -2,7 +2,7 @@ import { session } from "./session.js";
 import { addToast } from "./toasts.js";
 
 let movies;
-fetch("../20_movies.json")
+fetch("20_movies.json")
   .then((response) => response.json())
   .then((mov) => {
     movies = mov;

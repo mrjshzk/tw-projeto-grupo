@@ -1,9 +1,10 @@
-let redirectToLogin = () => {
-  window.location.href = "login.html";
+// needed because github pages :(
+const redirectToLogin = () => {
+  window.location.assign(new URL("login.html", window.location.href));
 };
 
-let redirectToSignup = () => {
-  window.location.href = "signup.html";
+const redirectToSignup = () => {
+  window.location.assign(new URL("signup.html", window.location.href));
 };
 let navbar = `
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">

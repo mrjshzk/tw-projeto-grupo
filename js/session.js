@@ -4,13 +4,11 @@ export const session = {
 };
 
 export function setUser(user) {
-  console.log("setting...");
   localStorage.setItem("user", JSON.stringify(user));
   session.user = user;
 
   localStorage.setItem("loggedIn", true);
   session.loggedIn = true;
-  console.log(session);
 }
 
 export function clearUser() {

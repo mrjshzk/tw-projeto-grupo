@@ -192,7 +192,7 @@ function addComment(comment, rating) {
   ratingContainer.value = "";
 
   if (!session.loggedIn) {
-    addToast("You are not logged in");
+    addToast("You need to be logged in to comment.");
     return;
   }
 

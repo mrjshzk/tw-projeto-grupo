@@ -20,16 +20,15 @@ if (session.loggedIn) {
       return;
     }
 
-    console.log(defaultUsers);
     for (const user of defaultUsers) {
       if (user.email == username || user.username == username) {
         if (user.password == password) {
-          console.log("hey");
           setUser(new User(user.username, user.email, user.password));
           window.location.href = "/account.html";
           return;
         }
       }
+      addToast("Could not login with the provided credentials.");
     }
   });
 }

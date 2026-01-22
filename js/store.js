@@ -51,10 +51,11 @@ select.addEventListener("input", (e) => {
   updateTableData();
 });
 
-function updateTableData() {
+export const adminGeneratedMovies = [];
+export function updateTableData() {
   if (!movies || !movies.MovieData) return;
 
-  let filteredData = movies.MovieData;
+  let filteredData = movies.MovieData.concat(adminGeneratedMovies);
 
   // filter from search
   if (search.length) {

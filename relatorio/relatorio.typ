@@ -43,28 +43,27 @@ Com a realização deste projeto tínhamos em mente evoluir as nossas capacidade
 
 = Estrutura do Website
 O _website_ ficou com a seguinte estrutura:\
-#align(center)[
-  _Pasta do projeto_\
-  - _img_
-    - _backdrops_
-    - _posters_
-  - _js_
-    - _account.js_
-    - _admin.js_
-    - _carousel.js_
-    - _login.js_
-    - _navbar.js_
-    - _session.js_
-    - _signup.js_
-    - _store.js_
-    - _toasts.js_
-  - _20_movies.json_
-  - _account.html_
-  - _index.html_
-  - _login.html_
-  - _signup.html_
-  - _store.html_
-]
+_Pasta do projeto_\
+- _img_
+  - _backdrops_
+  - _posters_
+- _js_
+  - _account.js_
+  - _admin.js_
+  - _carousel.js_
+  - _login.js_
+  - _navbar.js_
+  - _session.js_
+  - _signup.js_
+  - _store.js_
+  - _toasts.js_
+- _20_movies.json_
+- _account.html_
+- _index.html_
+- _login.html_
+- _signup.html_
+- _store.html_
+
 A pasta "_img/backdrops_" contém as imagens usadas no _Carousel_ da página inicial, onde ocupam a largura e altura toda da página (estilo inspirado no design do site da Netflix).
 A pasta "_img/posters_" contém as imagens usadas na página de catálogo para os cartões dos filmes.
 
